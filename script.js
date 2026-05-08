@@ -18,10 +18,11 @@ if (enrollmentForm) {
 
     if (!name || !age || !grade || !email || !phone || !profilePhoto) {
       message.textContent = "Please fill all fields!";
+      summary.display = "none";
       return;
     }
 
-    const student = {
+    const studentData = {
       name,
       age,
       grade,
@@ -30,9 +31,13 @@ if (enrollmentForm) {
       profilePhoto,
     };
 
+    const studentJSON = JSON.stringify(studentData);
+
+    localStorage.setItem("studentData", studentJSON);
+
     message.textContent = `Welcome ${name} to Bright Future School!`;
 
-    summary.textContent = `
+    summary.innerHTML = `
       <h3>Student Summary</h3>
       <p>Name: ${student.name}</p>
       <p>Age: ${student.age}</p>
@@ -47,13 +52,21 @@ if (enrollmentForm) {
 
 const contactInfo = document.getElementById("contactInfo");
 
+const data = localStorage.getItem("studentData");
+
+// Convert JSON back to object
+const student = JSON.parse(data);
+document.getElementById("studentName").textContent = `Name: ${student.name}`;
+document.getElementById("studentAge").textContent = `Age: ${student.age}`;
+document.getElementById("studentGrade").textContent = `Grade: ${student.grade}`;
+
 if (document.getElementById("showEmail")) {
   document.getElementById("showEmail").addEventListener("click", function () {
-    contactInfo.textContent = "Email: amina@gmail.com";
+    contactInfo.textContent = `Email: ${student.email}`;
   });
 
   document.getElementById("showPhone").addEventListener("click", function () {
-    contactInfo.textContent = "Phone: +93 700000000";
+    contactInfo.textContent = `Phone: ${student.phone}`;
   });
 
   document.getElementById("hideInfo").addEventListener("click", function () {

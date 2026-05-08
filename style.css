@@ -73,6 +73,11 @@ button:hover {
   margin-top: 20px;
   justify-content: center;
 }
+#message {
+  color: rgb(255, 0, 68);
+  font-weight: bold;
+  margin-top: 15px;
+}
 #coursesContainer {
   display: flex;
   flex-wrap: wrap;
@@ -94,6 +99,15 @@ button:hover {
 
 .filter-buttons {
   margin: 20px 0;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#contactInfo {
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* ================= FOOTER ================= */
