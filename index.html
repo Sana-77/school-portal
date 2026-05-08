@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>School Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Bright Future School</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1>Student Enrollment</h1>
+
+      <form id="enrollmentForm">
+        <input type="text" id="studentName" placeholder="Student Name" />
+        <input type="number" id="studentAge" placeholder="Age" />
+        <input type="text" id="gradeLevel" placeholder="Grade Level" />
+        <input type="email" id="studentEmail" placeholder="Email" />
+        <input type="number" id="studentPhone" placeholder="Phone Number" />
+
+        <input
+          type="file"
+          id="studentPhoto"
+          placeholder="Profile Photo"
+          accept="image/*"
+        />
+
+        <button type="submit">Enroll Student</button>
+      </form>
+
+      <p id="message"></p>
+
+      <div id="studentSummary"></div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Bright Future School</h3>
+          <p>Empowering students through education and innovation.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: info@brightfuture.edu</p>
+          <p>Phone: +93 700000000</p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">
+        © 2026 Bright Future School. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Bright Future School</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1>Available Courses</h1>
+
+      <div class="filter-buttons">
+        <button data-grade="all">All</button>
+        <button data-grade="10">Grade 10</button>
+        <button data-grade="11">Grade 11</button>
+      </div>
+
+      <div id="coursesContainer"></div>
+
+      <div id="courseDetails"></div>
+
+      <hr />
+
+      <h2>Add New Course</h2>
+
+      <form id="courseForm">
+        <input type="text" id="courseName" placeholder="Course Name" />
+        <input type="text" id="instructor" placeholder="Instructor" />
+        <input type="text" id="courseGrade" placeholder="Grade Level" />
+        <input type="text" id="description" placeholder="Description" />
+        <input type="text" id="image" placeholder="Image URL" />
+
+        <button type="submit">Add Course</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Bright Future School</h3>
+          <p>Empowering students through education and innovation.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: info@brightfuture.edu</p>
+          <p>Phone: +93 700000000</p>
+        </div>
+      </div>
+
+      <p class="footer-bottom">
+        © 2026 Bright Future School. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
