@@ -38,6 +38,18 @@ nav a {
 .container {
   padding: 30px;
 }
+.container h1 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+#newCourse {
+  margin: 10px;
+}
+h1 {
+  color: white;
+  text-shadow: 0 0 10px #5b996e;
+  margin-bottom: 20px;
+}
 
 form {
   display: flex;

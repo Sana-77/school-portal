@@ -95,7 +95,7 @@ if (coursesContainer) {
       instructor: "Mr. Ali",
       grade: "10",
       description: "Learn algebra and geometry.",
-      image: "https://via.placeholder.com/250",
+      image: "photos\\math.jpg",
     },
 
     {
@@ -103,7 +103,7 @@ if (coursesContainer) {
       instructor: "Mrs. Sara",
       grade: "11",
       description: "Introduction to mechanics.",
-      image: "https://via.placeholder.com/250",
+      image: "photos\\physics.jpg",
     },
   ];
 
